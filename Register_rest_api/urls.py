@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home_screen_view, name="home_screen_view"),
 
-    #REST_FRAMEWORK_URLS
-    # path('api/blog', include('blog.api.urls', 'blog_api')),
+    # REST_FRAMEWORK_URLS
+    # path('api/blog/', include('blog.api.urls', 'blog_api')),
+
 ]

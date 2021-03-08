@@ -1,4 +1,4 @@
-# from django.urls import path
+from django.urls import path
 # from account.api.views import (
 #     registration_view,
 # )
