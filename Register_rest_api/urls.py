@@ -16,12 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from Account.views import *
 from personal import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home_screen_view, name="home_screen_view"),
+    path('', views.home_screen_view, name="home"),
 
+    path('register/', registration_view, name="register"),
+    path('logout/', logout_view, name="logout"),
     # REST_FRAMEWORK_URLS
     # path('api/blog/', include('blog.api.urls', 'blog_api')),
 

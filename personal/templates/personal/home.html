@@ -1,14 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Personal<h1>
 
-{% include 'personal/snippets/body_snippets.html' %}
 
-<p>{{ some_string }}ff</p>
 
+<h3>Registered Users : </h3>
 {% for account in accounts %}
-<h6>{{account}}</h6>
+<h4>{{account}}</h4>
 {% endfor %}
 
 {% endblock %}
